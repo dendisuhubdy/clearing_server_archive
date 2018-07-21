@@ -15,33 +15,30 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/bitwyre/database-server',
     author='Bitwyre Technologies LLC',
-    author_email='dendi@suhubdy.com',
+    author_email='dendi@bitwyre.com',
     classifiers=[  # Optional
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Build Tools',
+        'Topic :: Financial Services :: Payment Systems',
         'License :: OSI Approved :: BSD-3 License',
         'Programming Language :: Python :: 3.6',
     ],
-    keywords='thinrwapper database REST',
+    keywords='thin wrapper to Stripe, BitGO API',
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
-    install_requires=['pymongo'],
+    install_requires=['pymongo', 'stripe'],
     extras_require={
         'dev': ['check-manifest'],
         'test': ['coverage'],
     },
-    package_data={  # Optional
-        'sample': ['package_data.dat'],
-    },
     entry_points={  # Optional
         'console_scripts': [
-            'restdbserver=restdbserver:main',
+            'clearing=clearing:main',
         ],
     },
     project_urls={
-        'Bug Reports': 'https://github.com/bitwyre/database-server/issues',
+        'Bug Reports': 'https://github.com/bitwyre/clearing/issues',
         'Funding': 'https://icls.cc',
         'Say Thanks!': 'http://bitwyre.com',
-        'Source': 'https://github.com/bitwyre/database-server/',
+        'Source': 'https://github.com/bitwyre/clearing/',
     },
 )
