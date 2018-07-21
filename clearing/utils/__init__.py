@@ -5,7 +5,7 @@
 
 .. module:: utils
    :platform: Unix
-   :synopsis: Helper functions useful in possibly all :mod:`orion.core`'s modules.
+   :synopsis: Helper functions useful in possibly all :mod:`clearing`'s modules.
 """
 
 from abc import ABCMeta
